@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always use newest rendering engine (tell explorer) -->
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <!-- Adjust size to screen with zoom 1 -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Michael Hu</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- latest version of jqeury and more standard scriptsrc -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="main.css" rel="Stylesheet">
+  </head>
+  <body>
+  <!-- Navigation controls -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/NavbarLogo.png" width="40" height="40"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="home nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a id="aboutBtn" class="about nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a id="portfolioBtn" class="portfolio nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a id="contactBtn" class="contact nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+<!-- Image slider -->
+  <div class="carousel slide" id="slides" data-ride="carousel">
+  <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <!-- <li data-target="#slides" data-slide-to="2"></li> -->
+  </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/background1.png" width="2000" height="750"/>
+          <div class="carousel-caption">
+              <h1 class="display-2">Michael Hu</h1>
+              <h3>Native iOS & Web Developer</h3>
+              <button id="read1" type="button" class="btn btn-outline-secondary btn-lg">Read more</button>
+              <button id="contact1" type="button" class="contact btn btn-primary btn-lg">Contact Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/background2.png" width="2000" height="750" />
+          <div class="carousel-caption">
+            <h2>"There are 10 types of people, those who understand binary and those who don't"</h3>
+            <button id="read2" type="button" class="btn btn-outline-secondary btn-lg">Read more</button>
+          </div>
+        </div>
+        <!-- <div class="carousel-item active">
+          <img src="images/background3.png" />
+        </div> -->
+    </div>
+  </div>
+
+  <!-- jumbotron -->
+  <div class="container-fluid">
+    <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="jumbo">
+          A web hosting service allows individuals and organizations to make their website accessible via the World Wide Web.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a id="connect" href="#"> <button type="button" class="btn btn-outline-secondary btn-lg">Connect Me</button></a>
+      </div>
+    </div>
+  </div>
+
+<!-- Welcome section -->
+<div class="container-fluid padding">
+  <div id="welcomePage" class="row welcome text-center">
+    <div class="col-12">
+        <h1 class="display-4">"Hello world!"</h1>
+    </div>
+    <hr class="hr"/>
+    <div class="col-lg-6">
+      <hr class="fix" />
+        <p class="lead">
+          Welcome to my website! <br />
+          Feel free to look around and leave me a message if you like it.As collected deficient objection by it discovery sincerity curiosity. Quiet decay who round three world whole has mrs man. Built the china there tried jokes which gay why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her moonlight men sweetness see unwilling. Often of it tears whole oh balls share an. <br />
+          This webiste is..
+        </p>
+    </div>
+    <div class="col-lg-6">
+      <div class="cardBook">
+        <div class="imgBox">
+          <img src="images/CoverSEO.png"/>
+        </div>
+        <div class="details">
+            <h5 class="headerBook">7 Essential HTML Tags that Separate SEO Pros from the Rookies</h5>
+            <hr />
+            <p>
+              1. Title tag<br/>2. Meta description tag<br/>3. Open Graph tags<br/>4. Robots tag<br/>5. Canonical tag<br/> 6. Header tags<br/> 7. Alt attribute<br/>
+            </p>
+            <p class="slotText">
+              For the best optimization you choose a HTML website! Contact me for more info.
+            </p>
+            <p class="footerBook">© 2018 Michael Hu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <hr class="fix" /> -->
+
+<!-- Three column section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-code"></i>
+        <h3 class="lng">HTML5</h3>
+        <p>
+          Built with the latest version of HTML, HTML5.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3 class="lng">BOOTSTRAP</h3>
+        <p>
+          Built with the latest version of Bootstrap, Bootstrap 4.
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <i class="fab fa-css3"></i>
+        <h3 class="lng">CSS3</h3>
+        <p>
+          Built with the latest version of CSS, CSS3.
+        </p>
+    </div>
+</div>
+</div>
+
+<!-- About me -->
+<div class="container-fluid padding">
+  <div id="aboutMePage" class="row text-center">
+    <div class="col-12">
+      <h1 class="display-4">Get to know me</h1>
+      <hr class="hr" />
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="container1 col-lg-4">
+      <img class="avatar" src="images/selfie1.png" class="img-fluid" width="300"/>
+    </div>
+    <div class="container1 col-lg-4">
+      <img class="avatar" src="images/selfie1.png" class="img-fluid" width="300"/>
+    </div>
+    <div class="container1 col-lg-4">
+      <img class="avatar" src="images/selfie1.png" class="img-fluid" width="300"/>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-md-3">
+      <h2>Michael Hu</h2>
+      <h6>Native iOS & Web Developer</h6><br />
+      <p class="bio">
+        I'm a student of Management & Consumer Studies with qualities in programming
+        thanks to the minor Programming at the University of Amsterdam.
+        The combination of Business and ICT is very powerfull and in my opinion the future!
+      </p>
+    </div>
+    <div class="container1 col-md-3">
+      <img class="avatar" src="images/selfie1.png" class="img-fluid" width="200"/>
+    </div>
+    <div class="col-md-3">
+      <img class="avatar2" src="images/selfie1.png" class="img-fluid" width="200"/>
+    </div>
+    <div class="col-md-3">
+      <img class="avatar2" src="images/selfie1.png" class="img-fluid" width="200"/>
+    </div>
+  </div>
+</div> -->
+
+<!-- fixed background -->
+<hr class="my-4" />
+<figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+      </div>
+    </div>
+</figure>
+
+<!-- My projects -->
+<div class="container-fluid padding">
+  <div id="projectsPage" class="row text-center">
+    <div class="col-12">
+      <h1 class="display-4">Projects</h1>
+    </div>
+    <hr class="hr"/>
+  </div>
+</div>
+
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-md-4">
+      <div class="card">
+          <img class="card-imd-top" src="images/project1.png" height="250" />
+          <div id="card1" class="card-body">
+              <h4 class="card-title">Connect</h4>
+              <p class="card-text">
+                Social media application for iOS users. Connect with new people!
+              </p>
+              <a href="#" class="test btn btn-outline-secondary">Read More</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img class="card-imd-top" src="images/project2.png"/>
+          <div id="card2" class="card-body">
+              <h4 class="card-title">Portfolio Website</h4>
+              <p class="card-text">
+                This website is made with HTML, Bootstrap, CSS and jQeury.
+              </p>
+              <a href="#" class="btn btn-outline-secondary">Read More</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img class="card-imd-top" src="images/project3.png" height="250"/>
+          <div class="card-body">
+              <h4 class="card-title">Anytimer</h4>
+              <p class="card-text">
+                Cool iOS social game for students. Still in progress, more coming soon!
+              </p>
+              <a href="#" class="btn btn-outline-secondary">Read More</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="container-fluid padding">
+  <div id="contactPage" class="row text-center">
+    <div class="col-12">
+      <h1 class="display-4">Get in touch</h1>
+    </div>
+    <hr class="hr"/>
+  </div>
+</div>
+
+
+<div class="contact-form">
+  <div class="row padding">
+    <div id="address" class="text-align col-md-6">
+      <p>
+        If you want to get in touch with me, just leave me a message.<br />
+        I'm always open for new projects and collaborations!
+        ~Let's chat.
+      </p>
+      <hr />
+      <p>E-mail: mgl.hu@hotmail.com</p>
+      <p>Phone: +316 398 531 62</p>
+    </div>
+    <div class="input col-md-6">
+        <div class="form-group">
+          <label>Your name</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Your e-mail</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block">Send</button>
+        </div>
+      </div>
+    </div>
+    <hr class="lastHr"/>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-12">
+          <img src="images/2.png" width="200" />
+            <hr class="light" />
+          <pr>© 2018 Michael Hu</pr>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  $(function() {
+// When read more button is clicked move window to div welcomePage
+    $("#read1, #read2").click(function(){
+      $("html, body").animate({
+        scrollTop: $("#welcomePage").offset().top
+      }, 888)
+    });
+    $("#aboutBtn").click(function(){
+      $("html, body").animate({
+        scrollTop: $("#aboutMePage").offset().top
+      }, 888)
+    });
+    $("#portfolioBtn").click(function(){
+      $("html, body").animate({
+        scrollTop: $("#projectsPage").offset().top
+      }, 888)
+    });
+    $("#contactBtn, #contact1, #connect").click(function(){
+      $("html, body").animate({
+        scrollTop: $("#contactPage").offset().top
+      }, 888)
+    });
+  });
+
+</script>
+
+</body>

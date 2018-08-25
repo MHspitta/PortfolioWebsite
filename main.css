@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+.navbar {
+  height: 6%;
+  background-color: transparent !important;
+}
+.navbar li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.2em !important;
+}
+.carousel-inner img{
+  width:100%;
+  height:100%;
+}
+.carousel-caption {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%:
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 150%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.carousel-caption h2 {
+  font-size: 150;
+  font-weight: : 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.jumbotron {
+  padding: 1rem;
+}
+.lead {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+#welcomePage, #aboutMePage, #projectsPage, #contactPage {
+  padding-top: 2rem;
+}
+.fix {
+  padding-bottom: 3rem;
+  border-top: 1px
+}
+.hr {
+  border-top: 2px solid #b4b4b4;
+  width: 75%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-code {
+  color: #e54d26;
+}
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2163ef;
+}
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+.container1 {
+  perspective: 700;
+}
+.avatar {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+#id {
+  margin: 0;
+}
+.front, .back {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 200px;
+  /* height: 200px; */
+  backface-visibility: hidden;
+}
+.avatar:hover {
+  transform: rotateY(180deg);
+}
+img.avatar {
+  border-radius: 50%;
+}
+.card img{
+  height: 100%;
+  width:100%;
+}
+#card1 {
+  padding-top: 4rem;
+}
+#card2 {
+  padding-top: 2.3rem;
+}
+footer {
+  background-color: #666666;
+}
+hr.light{
+  border-top: 1px solid #808080;
+  width: 75%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.contact-form {
+  color:black;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+#address {
+  padding-top: 3rem;
+  font-size: 130%;
+}
+.display-4{
+  font-size: 300%;
+}
+
+/* beginning of book */
+.cardBook {
+  position: absolute;
+  text-align: left;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.cardBook:hover {
+  transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+
+}
+.cardBook:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left:0;
+  width: 100px;
+  height: 5px;
+  background: #475b02;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.cardBook:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background: #7EA301;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.cardBook .imgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: left;
+  transition: 1s;
+}
+.cardBook:hover .imgBox {
+  transform: rotatey(-135deg);
+}
+.cardBook .details {
+  position: absolute;
+  top:0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+.headerBook {
+  font-size: 110%;
+}
+.slotText {
+  font-size: 80%;
+  padding-bottom: .5rem;
+}
+.footerBook {
+  font-size: 50%;
+  text-align: center;
+}
+
+/* End of book */
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+.carousel-caption {
+  top:45%;
+}
+.carousel-caption h1 {
+  font-size: 350%
+}
+.carousel-caption h3 {
+  font-size: 100%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.carousel-caption h2 {
+  font-size: 150%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+}
+.carousel-caption .btn {
+  font-size: 95%;
+  padding: 8px 14px;
+}
+p.lead {
+  font-size: 100%;
+}
+.jumbotron .btn {
+  font-size: 80%;
+  padding: 8px 16px;
+}
+.fa-code {
+  font-size: 300%;
+}
+.fa-css3{
+  font-size: 300%;
+}
+.fa-bold {
+  font-size: 300%;
+}
+.lng {
+  font-size: 150%;
+}
+.display-4 {
+  font-size: 250%;
+}
+
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top:45%;
+  }
+  .carousel-caption h1 {
+    font-size: 300%
+  }
+  .carousel-caption h3 {
+    font-size: 100%;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+  .carousel-caption h2 {
+    font-size: 100%;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 50%;
+    padding: 4px 7px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .jumbotron {
+    height: 150px;
+  }
+  .jumbo {
+    font-size: 70%;
+  }
+  p.lead {
+    font-size: 100%;
+  }
+  .jumbotron .btn {
+    font-size: 40%;
+    padding: 6px 12px;
+  }
+  .fa-code {
+    font-size: 250%;
+  }
+  .fa-css3{
+    font-size: 250%;
+  }
+  .fa-bold {
+    font-size: 250%;
+  }
+  .lng {
+    font-size: 150%;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('images/1.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: grid;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
