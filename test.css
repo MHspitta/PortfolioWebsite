@@ -1,9 +1,14 @@
-/* body{
-  margin: 0;
-  padding: 0;
-  background: #708d00;
-} */
-/* beginning of book */
+@font-face { font-family: anonymouspro ; src: url('anonymouspro/AnonymousPro-Regular.ttf'); }
+@font-face { font-family: anonymousproBold ; src: url('anonymouspro/AnonymousPro-Bold.ttf'); }
+
+h5 {
+  font-family: anonymousproBold, sans-serif;
+}
+
+html, body {
+  font-family: 'anonymouspro', sans-serif;
+}
+
 .cardBook {
   position: absolute;
   top:50%;
