@@ -47,7 +47,6 @@
   <ul class="carousel-indicators">
       <li data-target="#slides" data-slide-to="0" class="active"></li>
       <li data-target="#slides" data-slide-to="1"></li>
-      <!-- <li data-target="#slides" data-slide-to="2"></li> -->
   </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -93,16 +92,19 @@
         <h1 class="display-4">"Hello world!"</h1>
     </div>
     <hr class="hr"/>
-    <div class="col-lg-6">
-      <hr class="fix" />
+    <div class="col-xs-12 col-md-6 col-lg-6 text-left">
         <p class="lead">
           Welcome to my website! <br />
           This website is built with ease and care. I tried to show off some of the skills I own in developing a good HTML website with CSS3, Bootstrap and jQuery.
           In my opinion HTML websites are way better than Wordpress and the main reason for that is, HTML gives you full control over SEO! <br />
-          Take a look at the book I made on the right about the essentials of SEO, enjoy! <br />
+          Take a look at the book I made about the essentials of SEO, enjoy! <br />
         </p>
     </div>
-    <div class="col-lg-6">
+    <div class="col-xs-12 col-sm-6 col-lg-6">
+      <img class="SEOimage" src="images/SEO1.png" width="300"/>
+    </div>
+    <hr id="fixBook1" />
+    <div class="col-lg-12">
       <div class="cardBook">
         <div class="imgBox">
           <img src="images/CoverSEO.png"/>
@@ -122,11 +124,12 @@
     </div>
   </div>
 </div>
+<hr id="fixBook2" />
 <!-- <hr class="fix" /> -->
 
 <!-- Three column section -->
 <div class="container-fluid padding">
-<div class="row text-center padding">
+<div id="lng" class="row text-center padding">
     <div class="col-xs-12 col-sm-6 col-md-4">
         <i class="fas fa-code"></i>
         <h3 class="lng">HTML5</h3>
@@ -267,20 +270,21 @@
     <hr class="hr"/>
   </div>
 </div>
-
-
 <div class="contact-form">
   <div class="row padding">
-    <div id="address" class="text-align col-md-6">
-      <p>
-        If you want to get in touch with me, just leave me a message.<br />
-        I'm always open for new projects and collaborations!
-        ~Let's chat.
-      </p>
-      <hr />
-      <p>E-mail: mgl.hu@hotmail.com</p>
-      <p>Phone: +316 398 531 62</p>
-    </div>
+      <div id="address" class="text-align col-md-6">
+        <div class="adress">
+          <p>
+            If you want to get in touch with me, just leave me a message.<br />
+            I'm always open for new projects and collaborations!
+            ~Let's chat.
+          </p>
+
+          <hr />
+          <p>E-mail: mgl.hu@hotmail.com</p>
+          <p>Phone: +316 398 531 62</p>
+        </div>
+      </div>
     <div class="input col-md-6">
         <div class="form-group">
           <label>Your name</label>
