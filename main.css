@@ -49,6 +49,8 @@ html, body{
   font-size: 100%;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-left: 6rem;
+  margin-right: 3rem;
 }
 .padding {
   padding-bottom: 2rem;
@@ -284,6 +286,10 @@ figure {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+  .lead {
+    margin-left: 3rem;
+    margin-right: 0rem;
+  }
   #FIXX {
     display: none;
   }
@@ -312,6 +318,10 @@ figure {
   }
 }
 @media (max-width: 768px) {
+.lead {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
 #FIXX {
   display: none;
 }
