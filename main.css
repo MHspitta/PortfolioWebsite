@@ -284,6 +284,22 @@ figure {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+  #FIXX {
+    display: none;
+  }
+  .back-content {
+    font-size: 80%;
+  }
+  .image-area img {
+    height: 150px;
+    width: 150px;
+  }
+  .team-text h2{
+    font-size: 180%;
+  }
+  .image-area {
+    padding-top: 2.5rem;
+  }
   p.lead {
     font-size: 90%;
     /* padding-left: 10rem; */
@@ -296,6 +312,9 @@ figure {
   }
 }
 @media (max-width: 768px) {
+#FIXX {
+  display: none;
+}
 .carousel-caption {
   top:45%;
 }
@@ -351,6 +370,13 @@ figure {
 
 }
 @media (max-width: 576px) {
+  #FIXX {
+    display: none;
+  }
+  .image-area img {
+    height: 180px;
+    width: 180px;
+  }
   .navbar {
     font-size: 60%;
   }
@@ -374,9 +400,6 @@ figure {
   .carousel-caption .btn {
     font-size: 30%;
     padding: 3px 6px;
-  }
-  .carousel-indicators {
-    display: none;
   }
   .jumbotron {
     padding: 1rem;
