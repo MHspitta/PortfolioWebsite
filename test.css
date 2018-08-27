@@ -1,83 +1,104 @@
-@font-face { font-family: anonymouspro ; src: url('anonymouspro/AnonymousPro-Regular.ttf'); }
-@font-face { font-family: anonymousproBold ; src: url('anonymouspro/AnonymousPro-Bold.ttf'); }
-
-h5 {
-  font-family: anonymousproBold, sans-serif;
+body {
+  background: #eee;
+}
+.team-area {
+  padding: 2% 0;
+}
+.section-header p {
+  font-family: poppins;
+  width: 75%;
+  margin: 2% auto;
+  line-height: 25px;
 }
 
-html, body {
-  font-family: 'anonymouspro', sans-serif;
+.line {
+  height:2px;
+  width: 200px;
+  display: inline-block;
+  margin:auto;
+  background: tomato;
 }
 
-.cardBook {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 400px;
-  background: #fff;
-  transform-style: preserve-3d;
-  transform: translate(-50%, -50%) perspective(2000px);
-  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, 0.5);
-  transition: 1s;
-}
-.cardBook:hover {
-  transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
-  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, 0.5);
-  transition: 1s;
-
-}
-.cardBook:before{
-  content: '';
-  position: absolute;
-  top: -5px;
-  left:0;
-  width: 100px;
-  height: 5px;
-  background: #475b02;
-  transform-origin: bottom;
-  transform: skewX(-45deg);
-}
-.cardBook:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -5px;
-  width: 5px;
-  height: 100%;
-  background: #7EA301;
-  transform-origin: left;
-  transform: skewY(-45deg);
-}
-.cardBook .imgBox {
-  width: 100%;
-  height: 100%;
+.member-area {
   position: relative;
-  transform-origin: left;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transfrom-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-.cardBook:hover .imgBox {
-  transform: rotatey(-135deg);
+.box-front {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  /* transform: rotateY(0deg); */
+  z-index: 2;
+  margin-bottom: 30px;
+  padding: 15% 20%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  min-height: 400px;
 }
-.cardBook .details {
+
+.box-back {
   position: absolute;
   top:0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 20px;
-  z-index: -1;
-}
-.headerBook {
-  font-size: 110%;
-}
-.slotText {
-  font-size: 80%;
-  padding-bottom: .5rem;
-}
-.footerBook {
-  font-size: 50%;
-  text-align: center;
+  left:0;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  min-height: 400px;
+  margin-bottom: 30px;
+  padding: 10% 15%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-/* End of book */
+.box-front, .box-back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -moz-transition:1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.image-area img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.single-member:hover .box-back{
+  -webkit-transform: rotateY(0deg);
+  -moz-transfrom: rotateY(0deg);
+  -o-transfrom: rotateY(0deg);
+  -ms-transfrom: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.single-member:hover .box-front{
+  -webkit-transform: rotateY(180deg);
+  -moz-transfrom: rotateY(180deg);
+  -o-transfrom: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.box-back, .box-front {
+  border: 10px double #c5c5c5;
+}
+.team-text h2, .back-contnet h2{
+  font-family: sans-serif;
+  padding-top: 3rem;
+}
+.team-text p, .back-content p{
+  text-align: justify;
+  line-height: 25px;
+  margin-top: 25px;
+}
